@@ -4,6 +4,7 @@
  
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
  
 <html>
  <head>
@@ -11,14 +12,17 @@
  <title>ログイン</title>
  </head>
  <body>
- 
-<form action="login" method="post">
- 
-<div>
+ <f:form modelAttribute="loginForm" action="login" method="post">
+ <div>
+ ユーザ名：<input type="text" id="loginName" name="loginName">
+ </div>
+ <div>
+ パスワード：<input type="text" id="loginPassword" name="loginPassword">
+ </div>
+ <div>
  <input type="submit" value="ログイン">
  </div>
- 
- </form>
+ </f:form>
  
  </body>
 </html>
