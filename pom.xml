@@ -98,7 +98,7 @@
 			<artifactId>hibernate-validator</artifactId>
 			<version>5.2.4.Final</version>
 		</dependency>
-		
+				
 		<!-- Test Artifacts -->
 		<dependency>
 			<groupId>org.springframework</groupId>
